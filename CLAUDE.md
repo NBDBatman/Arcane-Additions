@@ -26,6 +26,12 @@ under the `arcane_additions` namespace.
 - **Translations** go in `assets/arcane_additions/lang/en_us.json` using keys like
   `enchantment.arcane_additions.<id>`. This file is currently empty and needs to be
   populated for every enchantment.
+- **Guide book** (`data/arcane_additions/recipe/guide_book.json`) is a crafting
+  recipe (`minecraft:book` + `minecraft:enchanted_book`, shapeless) that outputs a
+  `minecraft:written_book` with a hardcoded `minecraft:written_book_content`
+  component — one page per enchantment. Its recipe-unlock advancement lives at
+  `data/arcane_additions/advancement/recipes/guide_book.json`. When adding a new
+  enchantment, add a page here too.
 
 ## Workflow Notes
 
@@ -34,6 +40,7 @@ under the `arcane_additions` namespace.
   2. Any item tag it depends on.
   3. `in_enchanting_table.json` registration.
   4. A translation entry in `en_us.json`.
+  5. A page in the guide book (`data/arcane_additions/recipe/guide_book.json`).
 - `arcane_additions_enchants.md` is a brainstorm/idea list — not all entries are implemented.
   `SUGGESTIONS.md` tracks a curated, actionable backlog.
 - Keep `min_format`/`max_format` in `pack.mcmeta` in sync with the targeted Minecraft version.

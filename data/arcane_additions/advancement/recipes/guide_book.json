@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:book"]
+          }
+        ]
+      }
+    },
+    "has_enchanted_book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:enchanted_book"]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": ["arcane_additions:guide_book"]
+  }
+}

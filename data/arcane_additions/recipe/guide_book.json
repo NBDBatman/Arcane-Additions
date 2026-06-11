@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:book",
+    "minecraft:enchanted_book"
+  ],
+  "result": {
+    "id": "minecraft:written_book",
+    "count": 1,
+    "components": {
+      "minecraft:written_book_content": {
+        "title": "Arcane Additions",
+        "author": "Arcane Additions",
+        "generation": 0,
+        "resolved": true,
+        "pages": [
+          "§6Arcane Additions\n\nA collection of enchantments to enhance vanilla gameplay.\n\nTurn the page to learn about each enchantment.",
+          "§cBulwark\n\n§0Applies to: Shields\nSlot: Offhand\nMax Level: III\n\nIncreases armor by 2 / 4 / 6 while the shield is held in the offhand.",
+          "§cFortify\n\n§0Applies to: Chestplates\nMax Level: III\n\nIncreases armor by 2 / 4 / 6.",
+          "§cSwift Harness\n\n§0Applies to: Harnesses\nMax Level: III\n\nIncreases flying speed by 0.01 / 0.02 / 0.03 per level.",
+          "§cEnsnare\n\n§0Applies to: Pickaxes\nMax Level: I\n\nBreak a monster spawner with this enchantment to pick it up as an item, preserving its mob and settings.\n\nPlace the item to restore the spawner.\n\nSilk Touch alone, or an empty spawner, only drops XP."
+        ]
+      }
+    }
+  }
+}
