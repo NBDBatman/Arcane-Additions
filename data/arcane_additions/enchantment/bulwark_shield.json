@@ -1,0 +1,31 @@
+{
+  "description": { "text": "Bulwark" },
+
+  "supported_items": "#arcane_additions:bulwark_shield",
+  "primary_items": "minecraft:book",
+
+  "weight": 8,
+  "max_level": 3,
+
+  "min_cost": { "base": 12, "per_level_above_first": 10 },
+  "max_cost": { "base": 32, "per_level_above_first": 10 },
+
+  "anvil_cost": 4,
+  "slots": ["offhand"],
+
+ "effects": {
+  "minecraft:attributes": [
+    {
+      "id": "fortify_armor_bonus_offhand",
+      "attribute": "minecraft:armor",
+      "amount": {
+        "type": "minecraft:lookup",
+        "values": [2, 4, 6],
+        "fallback": 6
+      },
+      "operation": "add_value",
+      "uuid": "c4b9a8e1-6b55-4a92-9d9e-2f75a4e3d222"
+    }
+  ]
+}
+}

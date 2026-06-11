@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "placed_spawner": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:spawner"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "arcane_additions:place_spawner"
+  }
+}

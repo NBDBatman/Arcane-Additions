@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spawner",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "arcane_additions:ensnare",
+                      "levels": {
+                        "min": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": "block_entity",
+              "ops": [
+                {
+                  "source": "SpawnData",
+                  "target": "SpawnerData.SpawnData",
+                  "op": "replace"
+                },
+                {
+                  "source": "SpawnPotentials",
+                  "target": "SpawnerData.SpawnPotentials",
+                  "op": "replace"
+                },
+                {
+                  "source": "Delay",
+                  "target": "SpawnerData.Delay",
+                  "op": "replace"
+                },
+                {
+                  "source": "MinSpawnDelay",
+                  "target": "SpawnerData.MinSpawnDelay",
+                  "op": "replace"
+                },
+                {
+                  "source": "MaxSpawnDelay",
+                  "target": "SpawnerData.MaxSpawnDelay",
+                  "op": "replace"
+                },
+                {
+                  "source": "SpawnCount",
+                  "target": "SpawnerData.SpawnCount",
+                  "op": "replace"
+                },
+                {
+                  "source": "MaxNearbyEntities",
+                  "target": "SpawnerData.MaxNearbyEntities",
+                  "op": "replace"
+                },
+                {
+                  "source": "RequiredPlayerRange",
+                  "target": "SpawnerData.RequiredPlayerRange",
+                  "op": "replace"
+                },
+                {
+                  "source": "SpawnRange",
+                  "target": "SpawnerData.SpawnRange",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

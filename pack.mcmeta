@@ -1,0 +1,9 @@
+{
+    "pack": {
+        "description": {
+            "text": "A datapack that adds more enchants to enhance the vanilla gameplay, including Ensnare for picking up monster spawners"
+        },
+        "min_format": [101, 1],
+        "max_format": [101, 1]
+    }
+}

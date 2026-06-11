@@ -1,0 +1,2 @@
+$data modify entity @s Item.components."minecraft:item_name" set value {"translate":"entity.minecraft.$(path)","fallback":"$(id)","color":"gold","italic":false,"extra":[" Spawner"]}
+$data modify entity @s Item.components."minecraft:lore" set value [{"text":"The essence of a ","color":"gray","italic":true,"extra":[{"translate":"entity.minecraft.$(path)","fallback":"$(id)"},{"text":" has"}]},{"text":"been ensnared in this cage.","color":"gray","italic":true}]

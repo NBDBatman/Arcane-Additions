@@ -1,0 +1,31 @@
+{
+  "description": { "text": "Fortify" },
+
+  "supported_items": "#arcane_additions:fortify_chest",
+  "primary_items": "minecraft:book",
+
+  "weight": 8,
+  "max_level": 3,
+
+  "min_cost": { "base": 12, "per_level_above_first": 10 },
+  "max_cost": { "base": 32, "per_level_above_first": 10 },
+
+  "anvil_cost": 4,
+  "slots": ["chest"],
+
+"effects": {
+  "minecraft:attributes": [
+    {
+      "id": "fortify_armor_bonus_chest",
+      "attribute": "minecraft:armor",
+      "amount": {
+        "type": "minecraft:lookup",
+        "values": [2, 4, 6],
+        "fallback": 6
+      },
+      "operation": "add_value",
+      "uuid": "9c5d5e72-3e9c-4b78-8a3d-11e9c4c8c001"
+    }
+  ]
+}
+}

@@ -1,0 +1,36 @@
+{
+  "description": {
+    "text": "Swift Harness"
+  },
+  "supported_items": "#arcane_additions:harness",
+  "primary_items": "#arcane_additions:harness",
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "swift_harness_flying_speed",
+        "attribute": "minecraft:flying_speed",
+        "amount": {
+          "type": "minecraft:lookup",
+          "values": [0.01, 0.02, 0.03],
+          "fallback": 0.04
+        },
+        "operation": "add_value",
+        "uuid": "8b2c2a4c-3f61-4d2f-9bb7-5f6b5a1b21a9"
+      }
+    ]
+  }
+}
