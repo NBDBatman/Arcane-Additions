@@ -61,9 +61,3 @@ configured, behaves exactly like vanilla: no item drop, just 15-43 XP.
 
 See the "Ensnare" section of [SUGGESTIONS.md](SUGGESTIONS.md) for its backlog
 and [CHANGELOG.md](CHANGELOG.md) for its version history.
-
-## Guide Book
-
-Craft a `minecraft:book` with any `minecraft:enchanted_book` to get the
-**Arcane Additions** guide — a written book with one page per enchantment
-describing what it does, what it applies to, and its max level.
