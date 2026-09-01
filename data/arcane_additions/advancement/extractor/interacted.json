@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "interacted_marker": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"arcane_extractor\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "arcane_additions:extractor/on_interact"
+  }
+}

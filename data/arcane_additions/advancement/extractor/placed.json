@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "placed_extractor": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:lectern",
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{arcane_additions:{extractor:true}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "arcane_additions:extractor/on_place"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "description": {
+    "text": "Explosive Arrows"
+  },
+  "supported_items": "#arcane_additions:explosive_bow",
+  "primary_items": "minecraft:book",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 8,
+  "slots": ["mainhand"],
+  "effects": {
+    "minecraft:projectile_spawned": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "arcane_additions:explosive_arrows/mark"
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "arcane_additions:explosive_arrows/explode"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BAB",
+    " L ",
+    "BAB"
+  ],
+  "key": {
+    "L": "minecraft:lectern",
+    "B": "minecraft:book",
+    "A": "minecraft:amethyst_shard"
+  },
+  "result": {
+    "id": "minecraft:lectern",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": { "arcane_additions": { "extractor": true } },
+      "minecraft:item_name": {
+        "text": "Enchant Extractor",
+        "color": "light_purple",
+        "italic": false
+      }
+    }
+  }
+}
